@@ -8,7 +8,7 @@ function Allstudents() {
     let context = useContext(StudentContext)
     console.log(context)
     let handleDelete = (i)=>{
-        let newArray = [...props.data.students]
+        let newArray = [...context.students]
         newArray.splice(i,1);
         context.setStudents(newArray)
     }
