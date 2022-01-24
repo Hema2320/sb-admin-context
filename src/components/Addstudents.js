@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import {useNavigate} from 'react-router-dom';
 import {StudentContext} from '../App'
 
-function Addstudents(props) {
+function Addstudents() {
     let context = useContext(StudentContext)
     let navigate = useNavigate();
     let [name,setName]=useState("");
